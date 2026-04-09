@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Natural State Energy — Connecting Rural Power to Global Compute Demand</title>
-<meta name="description" content="Natural State Energy connects rural electric cooperatives with AI and high-performance compute operators. We identify stranded capacity and structure long-term arrangements that work for both sides.">
+<meta name="description" content="Natural State Energy connects rural electric cooperatives with AI and high-performance compute operators. We identify available capacity and structure long-term arrangements that work for both sides.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@ body {
   padding: 0 var(--px);
 }
 
-/* ── NAV ─────────────────────────────────────────── */
+/* NAV */
 nav {
   position: sticky;
   top: 0;
@@ -58,10 +58,7 @@ nav {
   gap: 11px;
   text-decoration: none;
 }
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
+.logo-text { display: flex; flex-direction: column; }
 .logo-line {
   font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
   font-weight: 900;
@@ -71,16 +68,8 @@ nav {
   color: var(--green);
   line-height: 1.3;
 }
-.logo-rule {
-  height: 1px;
-  background: var(--amber);
-  margin: 3px 0;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
+.logo-rule { height: 1px; background: var(--amber); margin: 3px 0; }
+.nav-links { display: flex; align-items: center; gap: 28px; }
 .nav-links a {
   font-size: 13px;
   font-weight: 500;
@@ -109,7 +98,7 @@ nav {
   line-height: 1;
 }
 
-/* ── HERO ─────────────────────────────────────────── */
+/* HERO */
 .hero {
   background: var(--green);
   min-height: 90vh;
@@ -161,11 +150,7 @@ nav {
   margin-bottom: 52px;
   letter-spacing: 0.01em;
 }
-.hero-ctas {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 .btn {
   display: inline-block;
   padding: 14px 26px;
@@ -183,10 +168,7 @@ nav {
   color: var(--cream);
   background: transparent;
 }
-.btn-ghost:hover {
-  border-color: var(--cream);
-  background: rgba(238,232,222,0.07);
-}
+.btn-ghost:hover { border-color: var(--cream); background: rgba(238,232,222,0.07); }
 .btn-amber {
   background: var(--amber);
   color: var(--green-dark);
@@ -195,7 +177,7 @@ nav {
 }
 .btn-amber:hover { background: #b3732f; border-color: #b3732f; }
 
-/* ── SHARED SECTION ───────────────────────────────── */
+/* SHARED */
 section { padding: 96px 0; }
 .section-label {
   font-size: 10.5px;
@@ -214,14 +196,9 @@ section { padding: 96px 0; }
   margin-bottom: 32px;
 }
 
-/* ── OPPORTUNITY ──────────────────────────────────── */
+/* OPPORTUNITY */
 .opp { background: var(--linen); }
-.opp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: center;
-}
+.opp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
 .opp-body p {
   font-size: 17px;
   line-height: 1.78;
@@ -256,18 +233,8 @@ section { padding: 96px 0; }
   line-height: 1;
   margin-bottom: 6px;
 }
-.opp-stat-label {
-  font-size: 14px;
-  line-height: 1.65;
-  color: var(--cream);
-  opacity: 0.8;
-  font-weight: 300;
-}
-.opp-divider {
-  height: 1px;
-  background: rgba(201,133,58,0.28);
-  margin: 32px 0;
-}
+.opp-stat-label { font-size: 14px; line-height: 1.65; color: var(--cream); opacity: 0.8; font-weight: 300; }
+.opp-divider { height: 1px; background: rgba(201,133,58,0.28); margin: 32px 0; }
 .opp-stat-tag {
   font-size: 13px;
   font-weight: 500;
@@ -279,15 +246,10 @@ section { padding: 96px 0; }
   display: block;
 }
 
-/* ── HOW IT WORKS ─────────────────────────────────── */
+/* HOW IT WORKS */
 .how { background: var(--green-dark); }
 .how .section-h2 { color: var(--cream); }
-.steps {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 44px;
-  margin-top: 56px;
-}
+.steps { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 44px; margin-top: 56px; }
 .step-num {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 88px;
@@ -298,44 +260,14 @@ section { padding: 96px 0; }
   margin-bottom: -18px;
   display: block;
 }
-.step-bar {
-  width: 30px;
-  height: 2px;
-  background: var(--amber);
-  margin-bottom: 14px;
-}
-.step-title {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--cream);
-  margin-bottom: 16px;
-}
-.step-body {
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--cream);
-  opacity: 0.7;
-  font-weight: 300;
-}
-/* stagger */
-.steps .step:nth-child(2) { transition-delay: 0.1s; }
-.steps .step:nth-child(3) { transition-delay: 0.2s; }
+.step-bar { width: 30px; height: 2px; background: var(--amber); margin-bottom: 14px; }
+.step-title { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream); margin-bottom: 16px; }
+.step-body { font-size: 16px; line-height: 1.75; color: var(--cream); opacity: 0.7; font-weight: 300; }
 
-/* ── WHY NSE ──────────────────────────────────────── */
+/* WHY NSE */
 .why { background: var(--linen); }
-.why-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-.why-left p {
-  font-size: 16.5px;
-  line-height: 1.78;
-  color: var(--slate);
-}
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.why-left p { font-size: 16.5px; line-height: 1.78; color: var(--slate); }
 .proof-list { list-style: none; margin-top: 16px; }
 .proof-list li {
   display: flex;
@@ -346,42 +278,14 @@ section { padding: 96px 0; }
 }
 .proof-list li:first-child { border-top: 1px solid rgba(27,58,45,0.1); }
 .proof-icon { flex-shrink: 0; margin-top: 1px; }
-.proof-strong {
-  display: block;
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--green);
-  margin-bottom: 5px;
-  letter-spacing: 0.01em;
-}
-.proof-sub {
-  font-size: 14px;
-  line-height: 1.65;
-  color: var(--slate);
-  font-weight: 400;
-}
-/* proof list stagger */
-.proof-list li:nth-child(2) { transition-delay: 0.08s; }
-.proof-list li:nth-child(3) { transition-delay: 0.16s; }
-.proof-list li:nth-child(4) { transition-delay: 0.24s; }
+.proof-strong { display: block; font-size: 14.5px; font-weight: 600; color: var(--green); margin-bottom: 5px; letter-spacing: 0.01em; }
+.proof-sub { font-size: 14px; line-height: 1.65; color: var(--slate); font-weight: 400; }
 
-/* ── CONTACT ──────────────────────────────────────── */
+/* CONTACT */
 .contact { background: var(--green); }
 .contact .section-h2 { color: var(--cream); }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-.contact-intro {
-  font-size: 17px;
-  line-height: 1.78;
-  color: var(--cream);
-  opacity: 0.78;
-  margin-bottom: 36px;
-  font-weight: 300;
-}
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.contact-intro { font-size: 17px; line-height: 1.78; color: var(--cream); opacity: 0.78; margin-bottom: 36px; font-weight: 300; }
 .contact-email a {
   font-size: 15px;
   color: var(--amber);
@@ -391,81 +295,8 @@ section { padding: 96px 0; }
   margin-bottom: 6px;
 }
 .contact-email a:hover { text-decoration: underline; }
-.fg { margin-bottom: 18px; }
-.fg label {
-  display: block;
-  font-size: 10.5px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--cream);
-  opacity: 0.6;
-  margin-bottom: 7px;
-  font-weight: 500;
-}
-.fg input, .fg select, .fg textarea {
-  width: 100%;
-  background: rgba(238,232,222,0.07);
-  border: 1px solid rgba(238,232,222,0.18);
-  border-radius: 3px;
-  padding: 12px 14px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 15px;
-  color: var(--cream);
-  outline: none;
-  transition: border-color 0.18s;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.fg input::placeholder, .fg textarea::placeholder { color: rgba(238,232,222,0.3); }
-.fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--amber); }
-.fg select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23C9853A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  background-color: rgba(238,232,222,0.07);
-  padding-right: 36px;
-  cursor: pointer;
-}
-.fg select option { background: #1B3A2D; color: var(--cream); }
-.fg textarea { height: 110px; resize: vertical; }
-.btn-submit {
-  width: 100%;
-  background: var(--amber);
-  color: var(--green-dark);
-  border: none;
-  padding: 15px;
-  border-radius: 3px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.18s;
-  margin-top: 6px;
-}
-.btn-submit:hover { background: #b3732f; }
-.btn-submit:disabled { opacity: 0.6; cursor: default; }
-.form-msg {
-  display: none;
-  margin-top: 16px;
-  padding: 16px 18px;
-  border-radius: 3px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.form-msg.ok {
-  background: rgba(201,133,58,0.12);
-  border: 1px solid rgba(201,133,58,0.35);
-  color: var(--cream);
-}
-.form-msg.err {
-  background: rgba(200,50,50,0.12);
-  border: 1px solid rgba(200,50,50,0.35);
-  color: #ffb3b3;
-}
 
-/* ── FOOTER ───────────────────────────────────────── */
+/* FOOTER */
 footer {
   background: var(--green-dark);
   border-top: 1px solid rgba(201,133,58,0.18);
@@ -479,40 +310,20 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
+.footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .footer-logo .logo-line { color: rgba(238,232,222,0.55); }
 .footer-logo .logo-rule { background: rgba(201,133,58,0.45); }
-.footer-links {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-.footer-links a {
-  font-size: 12.5px;
-  color: rgba(238,232,222,0.45);
-  text-decoration: none;
-  transition: color 0.18s;
-}
+.footer-links { display: flex; gap: 24px; align-items: center; }
+.footer-links a { font-size: 12.5px; color: rgba(238,232,222,0.45); text-decoration: none; transition: color 0.18s; }
 .footer-links a:hover { color: rgba(238,232,222,0.85); }
 
-/* ── FADE ANIMATION ───────────────────────────────── */
-.fade {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.52s ease, transform 0.52s ease;
-}
+/* FADE */
+.fade { opacity: 0; transform: translateY(22px); transition: opacity 0.52s ease, transform 0.52s ease; }
 .fade.in { opacity: 1; transform: translateY(0); }
 
-/* ── MOBILE ───────────────────────────────────────── */
+/* MOBILE */
 @media (max-width: 800px) {
   :root { --px: 22px; }
-
-  nav { position: sticky; }
   .nav-inner { padding: 13px var(--px); }
   .nav-links {
     display: none;
@@ -525,29 +336,13 @@ footer {
     box-shadow: 0 8px 28px rgba(0,0,0,0.1);
   }
   .nav-links.open { display: flex; }
-  .nav-links a {
-    padding: 15px var(--px);
-    border-top: 1px solid rgba(27,58,45,0.08);
-    width: 100%;
-    font-size: 14px;
-  }
-  .nav-cta {
-    background: none !important;
-    color: var(--slate) !important;
-    border-radius: 0 !important;
-    padding: 15px var(--px) !important;
-  }
+  .nav-links a { padding: 15px var(--px); border-top: 1px solid rgba(27,58,45,0.08); width: 100%; font-size: 14px; }
+  .nav-cta { background: none !important; color: var(--slate) !important; border-radius: 0 !important; padding: 15px var(--px) !important; }
   .nav-toggle { display: block; }
-
   .hero-content { padding: 72px var(--px); }
   section { padding: 64px 0; }
-
-  .opp-grid,
-  .why-grid,
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-
+  .opp-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .steps { grid-template-columns: 1fr; gap: 44px; }
-
   .footer-inner { flex-direction: column; gap: 18px; text-align: center; }
   .footer-links { flex-direction: column; gap: 10px; }
 }
@@ -597,17 +392,16 @@ footer {
       <div class="opp-body fade">
         <span class="section-label">The Opportunity</span>
         <h2 class="section-h2">Hard to place power.<br>Game-changing revenue.</h2>
-        <p>Rural electric cooperatives often carry capacity that is difficult to place — existing infrastructure with no clear path to a large, reliable load. That capacity has real value. It just needs the right buyer.</p>
-        <p>AI data centers and high-performance compute operators need megawatts. They need them fast. And they cannot find enough of them. The infrastructure they are looking for already exists inside cooperative systems across the country.</p>
-        <p>Natural State Energy identifies that capacity, qualifies the right operators, and structures long-term arrangements that generate revenue cooperatives could not access on their own.</p>
+        <p>The country's largest power markets are full. Data center operators are exhausting capacity across major utility territories and facing interconnection queues that stretch years. The power they need exists. It is just not where they have historically looked.</p>
+        <p>Rural electric cooperatives carry capacity that is difficult to place and largely invisible to the operators who need it most. Natural State Energy changes that. We identify available cooperative capacity, qualify the right operators, and structure long-term arrangements that generate revenue cooperatives could not access on their own.</p>
       </div>
       <div class="opp-panel fade">
         <span class="opp-stat-tag">Sites we target</span>
-        <div class="opp-stat-num">20–50</div>
+        <div class="opp-stat-num">20-50</div>
         <div class="opp-stat-label">Megawatts per site, scalable from initial phase to full buildout.</div>
         <div class="opp-divider"></div>
         <span class="opp-stat-tag">Our orientation</span>
-        <div class="opp-stat-num" style="font-size:42px; line-height:1.1;">Long&#8209;term.</div>
+        <div class="opp-stat-num" style="font-size:42px; line-height:1.1;">Long-term.</div>
         <div class="opp-stat-label">Structured for partnership. Cooperative member-owners see revenue that compounds for decades.</div>
       </div>
     </div>
@@ -624,7 +418,7 @@ footer {
         <span class="step-num">01</span>
         <div class="step-bar"></div>
         <div class="step-title">Available Capacity</div>
-        <p class="step-body">The cooperative has idle substation infrastructure — already built, already connected to the grid. It generates no load revenue in its current state.</p>
+        <p class="step-body">The cooperative has capacity that is difficult to place -- existing infrastructure already connected to the grid with no clear path to a large, reliable load.</p>
       </div>
       <div class="step fade">
         <span class="step-num">02</span>
@@ -636,7 +430,7 @@ footer {
         <span class="step-num">03</span>
         <div class="step-bar"></div>
         <div class="step-title">Aligned Outcomes</div>
-        <p class="step-body">The operator gets certainty of power. The cooperative gets a new long-term load — and the economic development that comes with it.</p>
+        <p class="step-body">The operator gets certainty of power. The cooperative gets a new long-term load and the kind of revenue that changes what a co-op can do for its members.</p>
       </div>
     </div>
   </div>
@@ -649,12 +443,12 @@ footer {
       <div class="why-left fade">
         <span class="section-label">Why Natural State Energy</span>
         <h2 class="section-h2">Built for<br>this market.</h2>
-        <p>Most developers in this space come from outside the cooperative world. We don't. Our founding team includes a former cooperative engineer with two decades of utility relationships across Arkansas — the kind of trust that takes years to build and cannot be replicated by an outsider.</p>
-        <p style="margin-top:18px;">We operate where the opportunity is. We know how cooperatives work, what they're obligated to protect, and what a good deal looks like for their member-owners.</p>
+        <p>Most developers in this space come from outside the cooperative world. We do not. Our founding team includes a former cooperative engineer with two decades of utility relationships across Arkansas -- the kind of trust that takes years to build and cannot be replicated by an outsider.</p>
+        <p style="margin-top:18px;">We operate where the opportunity is. We know how cooperatives work, what they are obligated to protect, and what a good deal looks like for their member-owners.</p>
       </div>
       <div class="fade">
         <ul class="proof-list">
-          <li class="fade">
+          <li>
             <div class="proof-icon">
               <svg viewBox="0 0 16 16" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="8,1 1,14 6,14 8,10" fill="#1B3A2D"/>
@@ -666,7 +460,7 @@ footer {
               <span class="proof-sub">Deep utility relationships built over two decades inside the Arkansas cooperative system.</span>
             </div>
           </li>
-          <li class="fade">
+          <li>
             <div class="proof-icon">
               <svg viewBox="0 0 16 16" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="8,1 1,14 6,14 8,10" fill="#1B3A2D"/>
@@ -678,7 +472,7 @@ footer {
               <span class="proof-sub">Not here to extract value. Cooperative member-owners benefit for decades, not quarters.</span>
             </div>
           </li>
-          <li class="fade">
+          <li>
             <div class="proof-icon">
               <svg viewBox="0 0 16 16" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="8,1 1,14 6,14 8,10" fill="#1B3A2D"/>
@@ -687,10 +481,10 @@ footer {
             </div>
             <div>
               <span class="proof-strong">Right-sized sites, scalable</span>
-              <span class="proof-sub">20MW to 50MW per site. Sized for operators who need certainty, not speculation.</span>
+              <span class="proof-sub">10MW to 50MW per site. Sized for operators who need certainty, not speculation.</span>
             </div>
           </li>
-          <li class="fade">
+          <li>
             <div class="proof-icon">
               <svg viewBox="0 0 16 16" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="8,1 1,14 6,14 8,10" fill="#1B3A2D"/>
@@ -717,7 +511,7 @@ footer {
         <h2 class="section-h2">Let's talk.</h2>
         <p class="contact-intro">Whether you represent a cooperative with available capacity or a compute operator in need of power, we want to hear from you.</p>
         <div class="contact-email">
-          <a href="/cdn-cgi/l/email-protection#c4adaaa2ab84aaa5b0b1b6a5a8b7b0a5b0a1a1aaa1b6a3bdeaa7aba9"><span class="__cf_email__" data-cfemail="650c0b030a250b0411101704091611041100000b0017021c4b060a08">[email&#160;protected]</span></a>
+          <a href="mailto:info@naturalstateenergy.com">info@naturalstateenergy.com</a>
           <a href="https://naturalstateenergy.com">naturalstateenergy.com</a>
         </div>
       </div>
@@ -733,7 +527,7 @@ footer {
           style="min-width:100%;max-width:100%;height:539px;border:none;"
           scrolling="no"
         ></iframe>
-        <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+        <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
         <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-260982870528064']", "https://form.jotform.com/")</script>
       </div>
     </div>
@@ -756,17 +550,15 @@ footer {
     </a>
     <div class="footer-links">
       <a href="https://naturalstateenergy.com">naturalstateenergy.com</a>
-      <a href="/cdn-cgi/l/email-protection#2d44434b426d434c59585f4c415e594c59484843485f4a54034e4240"><span class="__cf_email__" data-cfemail="5831363e371836392c2d2a39342b2c392c3d3d363d2a3f21763b3735">[email&#160;protected]</span></a>
+      <a href="mailto:info@naturalstateenergy.com">info@naturalstateenergy.com</a>
       <a href="#">&copy; <span id="yr"></span> Natural State Energy, LLC</a>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Year
+<script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-// Nav toggle
 function toggleNav() {
   document.getElementById('navLinks').classList.toggle('open');
 }
@@ -774,12 +566,12 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
 });
 
-// Scroll fade
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
   });
 }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
 document.querySelectorAll('.fade').forEach(el => obs.observe(el));
-
-// Form handled by Jotform iframe
+</script>
+</body>
+</html>
