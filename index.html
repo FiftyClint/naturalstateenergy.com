@@ -596,10 +596,10 @@ footer {
     <div class="opp-grid">
       <div class="opp-body fade">
         <span class="section-label">The Opportunity</span>
-        <h2 class="section-h2">Two problems.<br>One connection.</h2>
-        <p>Rural electric cooperatives were built to serve agricultural loads. Those loads have shrunk. What remains is real infrastructure — substations, transmission lines, available capacity — sitting largely idle.</p>
-        <p>At the same time, demand for power from AI data centers and high-performance compute operators has never been higher. They need megawatts. They need them fast. They cannot find them.</p>
-        <p>Natural State Energy is the connection between those two realities.</p>
+        <h2 class="section-h2">Hard to place power.<br>Game-changing revenue.</h2>
+        <p>Rural electric cooperatives often carry capacity that is difficult to place — existing infrastructure with no clear path to a large, reliable load. That capacity has real value. It just needs the right buyer.</p>
+        <p>AI data centers and high-performance compute operators need megawatts. They need them fast. And they cannot find enough of them. The infrastructure they are looking for already exists inside cooperative systems across the country.</p>
+        <p>Natural State Energy identifies that capacity, qualifies the right operators, and structures long-term arrangements that generate revenue cooperatives could not access on their own.</p>
       </div>
       <div class="opp-panel fade">
         <span class="opp-stat-tag">Sites we target</span>
@@ -608,7 +608,7 @@ footer {
         <div class="opp-divider"></div>
         <span class="opp-stat-tag">Our orientation</span>
         <div class="opp-stat-num" style="font-size:42px; line-height:1.1;">Long&#8209;term.</div>
-        <div class="opp-stat-label">Structured for partnership, not extraction. Cooperative member-owners benefit for decades.</div>
+        <div class="opp-stat-label">Structured for partnership. Cooperative member-owners see revenue that compounds for decades.</div>
       </div>
     </div>
   </div>
@@ -717,42 +717,24 @@ footer {
         <h2 class="section-h2">Let's talk.</h2>
         <p class="contact-intro">Whether you represent a cooperative with available capacity or a compute operator in need of power, we want to hear from you.</p>
         <div class="contact-email">
-          <a href="mailto:info@naturalstateenergy.com">info@naturalstateenergy.com</a>
+          <a href="/cdn-cgi/l/email-protection#c4adaaa2ab84aaa5b0b1b6a5a8b7b0a5b0a1a1aaa1b6a3bdeaa7aba9"><span class="__cf_email__" data-cfemail="650c0b030a250b0411101704091611041100000b0017021c4b060a08">[email&#160;protected]</span></a>
           <a href="https://naturalstateenergy.com">naturalstateenergy.com</a>
         </div>
       </div>
       <div class="fade">
-        <!--
-          SETUP: Sign up at formspree.io, create a form, and replace
-          REPLACE_THIS_WITH_YOUR_FORMSPREE_ID below with your form ID.
-          Example: https://formspree.io/f/xpznkgbd
-        -->
-        <form id="contactForm" action="https://formspree.io/f/REPLACE_THIS_WITH_YOUR_FORMSPREE_ID" method="POST">
-          <div class="fg">
-            <label>Your Name</label>
-            <input type="text" name="name" placeholder="Full name" required autocomplete="name">
-          </div>
-          <div class="fg">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="you@organization.com" required autocomplete="email">
-          </div>
-          <div class="fg">
-            <label>I Represent</label>
-            <select name="type" required>
-              <option value="" disabled selected>Select one</option>
-              <option value="cooperative">A rural electric cooperative</option>
-              <option value="operator">A compute / data center operator</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label>Message</label>
-            <textarea name="message" placeholder="Tell us about your situation..." required></textarea>
-          </div>
-          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
-          <div class="form-msg ok" id="formOk">Message received. We'll be in touch within one business day.</div>
-          <div class="form-msg err" id="formErr">Something went wrong. Email us directly at info@naturalstateenergy.com</div>
-        </form>
+        <iframe
+          id="JotFormIFrame-260982870528064"
+          title="Natural State Energy - Contact"
+          onload="window.parent.scrollTo(0,0)"
+          allowtransparency="true"
+          allow="geolocation; microphone; camera; fullscreen; payment"
+          src="https://form.jotform.com/260982870528064"
+          frameborder="0"
+          style="min-width:100%;max-width:100%;height:539px;border:none;"
+          scrolling="no"
+        ></iframe>
+        <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-260982870528064']", "https://form.jotform.com/")</script>
       </div>
     </div>
   </div>
@@ -774,13 +756,13 @@ footer {
     </a>
     <div class="footer-links">
       <a href="https://naturalstateenergy.com">naturalstateenergy.com</a>
-      <a href="mailto:info@naturalstateenergy.com">info@naturalstateenergy.com</a>
+      <a href="/cdn-cgi/l/email-protection#2d44434b426d434c59585f4c415e594c59484843485f4a54034e4240"><span class="__cf_email__" data-cfemail="5831363e371836392c2d2a39342b2c392c3d3d363d2a3f21763b3735">[email&#160;protected]</span></a>
       <a href="#">&copy; <span id="yr"></span> Natural State Energy, LLC</a>
     </div>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Year
 document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -800,35 +782,4 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
 document.querySelectorAll('.fade').forEach(el => obs.observe(el));
 
-// Form submit (AJAX to Formspree)
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('submitBtn');
-  const ok  = document.getElementById('formOk');
-  const err = document.getElementById('formErr');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  ok.style.display = 'none';
-  err.style.display = 'none';
-  try {
-    const res = await fetch(this.action, {
-      method: 'POST',
-      body: new FormData(this),
-      headers: { 'Accept': 'application/json' }
-    });
-    if (res.ok) {
-      this.reset();
-      ok.style.display = 'block';
-      btn.textContent = 'Sent';
-    } else {
-      throw new Error();
-    }
-  } catch {
-    err.style.display = 'block';
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
-  }
-});
-</script>
-</body>
-</html>
+// Form handled by Jotform iframe
